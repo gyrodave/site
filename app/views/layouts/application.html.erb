@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lolosite</title>
+  <%= stylesheet_link_tag 'blueprint/screen'%>
+  <%= stylesheet_link_tag 'blueprint/print', 'media' => 'print' %>
+  <!--[if lt IE 8]>
+    <%= stylesheet_link_tag 'blueprint/ie' %>
+  <![endif]-->
+  <%= stylesheet_link_tag 'blueprint/plugins/fancy-type/screen.css'%>
+  <%= javascript_include_tag "application"%>
+  <%= csrf_meta_tags %>
+</head>
+	<!--header-->
+   <div class="container">
+	<%= render 'layouts/header' %>
+	<!--Side Menu-->
+	<%= render 'layouts/sidemenu' %>
+<!--*******************************-->
+<body>
+	<div class="span-19 last" id="sidebar"> 
+		<div id="ajax_content">
+			<%= yield %>
+		</div>
+	</div>
+</body>
+<!--*******************************-->
+	<!--Footer-->
+	<%= render 'layouts/footer' %>
+	  </div>
+</html>

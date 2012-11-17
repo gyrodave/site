@@ -1,0 +1,11 @@
+		<div class="span-4 colborder" id="content">
+			<ul>
+				<li><%= link_to 'Qui sommes nous ?', root_path %> </li>
+				<li><%= link_to 'Nos services', services_path %> </li>
+				<li><a href="http://vfr.pilot.free.fr">Contact</a></li>
+				<li><%= link_to "Ajax service !", :controller => "services", :action => "index", :remote=>true %></li>
+				<li><%= link_to "Ajax index !", :controller => "home", :action => "index", :remote=>true %></li>
+				<div id="result"></div>
+				
+			</ul>
+		</div>
