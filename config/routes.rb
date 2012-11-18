@@ -1,4 +1,6 @@
 Lolosite::Application.routes.draw do
+  get "users/new"
+
   get "services/index"
 
   get "home/index"
