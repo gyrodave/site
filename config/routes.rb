@@ -1,6 +1,4 @@
 Lolosite::Application.routes.draw do
-  get "users/new"
-
   get "services/index"
 
   get "home/index"
@@ -56,6 +54,9 @@ Lolosite::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   root :to => 'home#index'
+  
+  resources :users
+  match '/signup', to: 'users#new'
 
   # See how all your routes lay out with "rake routes"
 
