@@ -5,7 +5,7 @@ gem 'rails', '3.2.9'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+
 
 gem 'bootstrap-sass', '2.1'
 gem 'bcrypt-ruby', '3.0.1'
@@ -42,3 +42,9 @@ gem 'jquery-rails'
 group :development do
   gem 'annotate', '2.5.0'
 end
+
+  group :test do
+    gem 'sqlite3'
+	gem 'rspec-rails', '2.11.0'
+    gem 'factory_girl_rails', '4.1.0'
+  end

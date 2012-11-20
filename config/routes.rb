@@ -56,7 +56,7 @@ Lolosite::Application.routes.draw do
   root :to => 'home#index'
   
   resources :users
-  match '/signup', to: 'users#new'
+  match '/signup',  to: 'users#new'
 
   # See how all your routes lay out with "rake routes"
 
