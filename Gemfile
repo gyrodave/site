@@ -43,8 +43,13 @@ group :development do
   gem 'annotate', '2.5.0'
 end
 
+group :development, :test do
+  gem 'sqlite3', '1.3.5'
+  gem 'rspec-rails', '2.11.0'
+end
+
   group :test do
-    gem 'sqlite3'
+    gem 'capybara', '1.1.2'
 	gem 'rspec-rails', '2.11.0'
     gem 'factory_girl_rails', '4.1.0'
   end

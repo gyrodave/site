@@ -3,6 +3,11 @@
         </div>
 		<div class="span-15 last">
 		<h1>Lolo traduction</h1>
+		
+			<% flash.each do |key, value| %>
+			  <div class="<%= key %>"><%= value %></div>
+			<% end %> 
+		
 		</div>
 		
         <hr />
